@@ -27,8 +27,7 @@
 
 ### 相关频道 / 群
 
-- 新站长仓库：<https://t.me/zhanzhangck>
-- 站长群：<https://t.me/vpsbbq>
+暂无
 
 ---
 
