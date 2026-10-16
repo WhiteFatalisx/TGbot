@@ -57,8 +57,8 @@
 | `BOT_ID`            | 是   | 机器人自身 user id，就是 Bot Token 冒号前面的数字，例如 `123456789`        |
 | `SUPERGROUP_ID`     | 是   | 目标超级群 chat id，形如 `-100xxxxxxxxxx`                                  |
 | `API_BASE`          | 否   | 默认 `https://api.telegram.org`                                             |
-| `TURNSTILE_SITEKEY` | 否   | Turnstile Site Key，启用人机验证时必填                                      |
-| `TURNSTILE_SECRET`  | 否   | Turnstile Secret，启用人机验证时必填                                        |
+| `LOG_CHAT_ID` | 是   | 后台日志反馈群                                    |
+| `WEBHOOK_SECRET`  | 是   | 是防止伪造请求冒充 Telegram 给你机器人推送消息的一把「共享密钥」        |
 | `PUBLIC_BASE`       | 否   | Worker 公网地址，如 `https://tgbot.xxx.com`，用于生成验证链接               |
 
 > 获取 `SUPERGROUP_ID` 小技巧：
