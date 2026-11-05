@@ -60,6 +60,7 @@
 | `LOG_CHAT_ID` | 是   | 后台日志反馈群                                    |
 | `WEBHOOK_SECRET`  | 是   | 是防止伪造请求冒充 Telegram 给你机器人推送消息的一把「共享密钥」        |
 | `PUBLIC_BASE`       | 否   | Worker 公网地址，如 `https://tgbot.xxx.com`，用于生成验证链接               |
+| `WEBHOOK_SECRET`       | 否   | 验证密钥，防止恶意访问               |
 
 > 获取 `SUPERGROUP_ID` 小技巧：
 > - 在 Telegram 桌面端右键群内任意消息，复制消息链接；
@@ -85,6 +86,7 @@
 2. 新建 Worker（Modules 模式），将 `woker.js` 代码粘贴进去。
 3. 在 Settings → Variables 中配置上文列出的环境变量。
 4. 如需自定义域名，为 Worker 添加路由，例如 `https://tgbot.xxxx.com/*`。
+5. 密钥设置 https://api.telegram.org/bot<你的BOT_TOKEN>/setWebhook?url=https://tgspbot.xxxxx.workers.dev/&secret_token=<新的WEBHOOK_SECRET>
 
 ### 3. 启用 Webhook（非常关键）
 
